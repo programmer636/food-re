@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div>
+    <div class="container">
+
+        <div class="counter">
+            <h1>COUNTER</h1>
+        </div><br>
+        <h2 id="count">0</h2><br>
+        <button id="increase" onclick="changecount(1)">increase</button>
+        <button id="discrease" onclick="changecount(-1)">discrease</button>
+
+    </div>
+
+</div>
+
+<script>
+    var count = 0;
+
+    function changecount(num) {
+        count += num;
+        document.getElementById("count").textContent = count;
+    }
+</script>
+</body>
+
+</html>
